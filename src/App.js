@@ -1,12 +1,23 @@
 import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
+
 import './App.css';
-import Car from './components/practice';
+import WeatherApp from './components/practice';
+import Navbar from './components/navbar';
+
+
+
 
 function App() {
+ 
   return (
-   <>
-   <Car/>
-   </>
+    <>
+      <Navbar />
+      <div className='weatherbg row'>
+      <WeatherApp />
+      </div>
+
+    </>
   );
 }
 
